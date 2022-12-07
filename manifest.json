@@ -1,0 +1,30 @@
+{
+    "name": "Influenced",
+    "description": "Connects brands with agencies to deliver creator data for ad partnerships",
+    "version": "1.0",
+    "manifest_version": 3,
+    "permissions": [
+      "alarms",
+      "notifications",
+      "storage",
+      "tabs",
+      "http://*/",
+      "<all_urls>",
+      "identity",
+      "*://*.google.com/*"
+    ],
+    "content_security_policy": "script-src 'self' https://apis.google.com 'unsafe-eval'; object-src 'self'",
+    "background": {
+      "service_worker": "background.js"
+    },
+    "action": {
+      "default_title": "Influenced Popup",
+      "default_popup": "popup.html"
+    },
+    "icons": {
+      "16": "layers.png",
+      "32": "layers.png",
+      "48": "layers.png",
+      "128": "layers.png"
+    }
+  }
